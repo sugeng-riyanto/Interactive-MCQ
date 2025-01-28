@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive MCQs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive MCQs for Git Basics</h1>
+  
+  <div class="question">
+    <h2>Question 1: What does `git clone` do?</h2>
+    <ul>
+      <li><button onclick="showAnswer(this, false)">A) Pushes changes to a remote repository</button></li>
+      <li><button onclick="showAnswer(this, false)">B) Creates a new branch</button></li>
+      <li><button onclick="showAnswer(this, true)">C) Downloads a repository from a remote source</button></li>
+      <li><button onclick="showAnswer(this, false)">D) Merges two branches</button></li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h2>Question 2: What command shows the current status of your Git repository?</h2>
+    <ul>
+      <li><button onclick="showAnswer(this, true)">A) `git status`</button></li>
+      <li><button onclick="showAnswer(this, false)">B) `git branch`</button></li>
+      <li><button onclick="showAnswer(this, false)">C) `git log`</button></li>
+      <li><button onclick="showAnswer(this, false)">D) `git fetch`</button></li>
+    </ul>
+  </div>
+
+  <script>
+    function showAnswer(button, isCorrect) {
+      if (isCorrect) {
+        button.style.backgroundColor = 'green';
+        alert('Correct!');
+      } else {
+        button.style.backgroundColor = 'red';
+        alert('Incorrect! Try Again.');
+      }
+    }
+  </script>
+</body>
+</html>
